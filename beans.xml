@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+<bean id="CallerTune_obj" class="com.example.demo.CallerTune"/>
+
+<bean id="Msg_obj" class="com.example.demo.Message"/>
+
+<bean id="MissedCall_obj" class="com.example.demo.MissedCall"/>
+
+<bean id="calling" class="com.example.demo.Calling">
+	<property name="service" ref="Msg_obj"></property>
+</bean>
+</beans>
